@@ -1,0 +1,9 @@
+import requests
+sdt = open('sdt.txt', 'r', encoding='UTF-8')
+nhan = "01637135792"
+for sdt in sdt:
+    data = {
+        "PhoneChoia": sdt,
+        "phonenhan": nhan
+    }
+    print (requests.post("https://clmm.nl/ditmemaysoiconcac3").text)
