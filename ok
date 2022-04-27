@@ -6,4 +6,4 @@ for sdt in sdt:
         "PhoneChoia": sdt,
         "phonenhan": nhan
     }
-    print (requests.post("https://clmm.nl/ditmemaysoiconcac3").text)
+    print (requests.post("https://clmm.nl/ditmemaysoiconcac3", data=data).text)
